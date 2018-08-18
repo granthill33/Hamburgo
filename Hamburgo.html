@@ -94,7 +94,7 @@
 	</tr>
 	<tr>
 		<td>
-			<table align="center" id="profiles">
+			<table align="center" id="Profiles">
 				<tr>
 					<td class="message" align="center">(Click en la imagen para ver en tamaño completo)</td>
 				</tr>
@@ -105,7 +105,7 @@
 					</select></td>
 				</tr>
 				<tr>
-					<td><img src="profiles/Stage1.png" id="stages" height="176" width="320" onclick="fullSize()"></td>
+					<td><img src="Profiles/Stage1.png" id="stages" height="176" width="320" onclick="fullSize()"></td>
 				</tr>
 			</table>
 		</td>
@@ -1984,7 +1984,7 @@
 	var userError = "Introduce tu usuario del foro ACB.";
 	var divError = "Selecciona una división.";
 	var state = 0;
-	document.getElementById('profiles').style.display = "none";
+	document.getElementById('Profiles').style.display = "none";
 	var state2 = 0;
 	document.getElementById('ridersByPriceTR').style.display = "none";
 	function getCredits()
@@ -2198,18 +2198,18 @@
     {
     	if(state == 0)
     	{
-    		document.getElementById('profiles').style.display = "";
+    		document.getElementById('Profiles').style.display = "";
     		state = 1;
     	}
     	else
     	{
-    		document.getElementById('profiles').style.display = "none";
+    		document.getElementById('Profiles').style.display = "none";
     		state = 0;
     	}
     }
     function changeStage(stageValue)
     {
-    	var profilePic = "profiles/Stage" + (parseInt(document.getElementById('stageNumber').value)) + ".png";
+    	var profilePic = "Profiles/Stage" + (parseInt(document.getElementById('stageNumber').value)) + ".png";
 		document.getElementById('stages').src = profilePic;
     }
     function fullSize()
